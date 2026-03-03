@@ -5,9 +5,10 @@ interface TimerDisplayProps {
   remainingMs: number;
   totalMs: number;
   isRunning: boolean;
+  nextChimeTime?: number | null;
 }
 
-export function TimerDisplay({ remainingMs, totalMs, isRunning }: TimerDisplayProps) {
+export function TimerDisplay({ remainingMs, totalMs, isRunning, nextChimeTime }: TimerDisplayProps) {
   const radius = 120;
   const circumference = 2 * Math.PI * radius;
   const progress = 1 - remainingMs / totalMs;
@@ -57,6 +58,11 @@ export function TimerDisplay({ remainingMs, totalMs, isRunning }: TimerDisplayPr
         {isRunning && (
           <span className="mt-1 text-xs text-amber-600 dark:text-amber-400 uppercase tracking-widest">
             running
+          </span>
+        )}
+        {isRunning && nextChimeTime != null && (
+          <span className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+            Next: {new Date(nextChimeTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
           </span>
         )}
       </div>

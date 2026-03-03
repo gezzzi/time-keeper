@@ -1,20 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#D97706"/>
-    </linearGradient>
-  </defs>
-  <!-- Rounded square background -->
-  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
-  <!-- Bell body -->
-  <path d="M256 96c-8 0-15 3-20 8-50 12-88 58-88 118v64c0 12-8 24-20 32-8 6-12 14-12 22 0 16 14 28 32 28h176c18 0 32-12 32-28 0-8-4-16-12-22-12-8-20-20-20-32v-64c0-60-38-106-88-118-5-5-12-8-20-8z" fill="white" opacity="0.95"/>
-  <!-- Bell clapper / bottom nub -->
-  <ellipse cx="256" cy="388" rx="32" ry="12" fill="white" opacity="0.95"/>
-  <!-- Sound waves left -->
-  <path d="M120 200c-16 16-26 38-26 62s10 46 26 62" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
-  <path d="M88 176c-24 24-38 56-38 86s14 62 38 86" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" opacity="0.35"/>
-  <!-- Sound waves right -->
-  <path d="M392 200c16 16 26 38 26 62s-10 46-26 62" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
-  <path d="M424 176c24 24 38 56 38 86s-14 62-38 86" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" opacity="0.35"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="#F59E0B" stroke="#B45309" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="256" height="256" rx="48" fill="#FEF3C7" stroke="none"/>
+  <path d="M128 28c-6 0-11 5-11 11v9c-34 8-58 38-58 74v40l-16 20h170l-16-20v-40c0-36-24-66-58-74v-9c0-6-5-11-11-11z"/>
+  <path d="M104 196c0 14 10 28 24 28s24-14 24-28" fill="none"/>
 </svg>

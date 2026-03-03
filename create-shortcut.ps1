@@ -48,7 +48,7 @@ public static class ShortcutHelper {
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $lnkPath = Join-Path ([Environment]::GetFolderPath('StartMenu')) 'Programs\Time Keeper.lnk'
 $batPath = Join-Path $scriptDir 'start-time-keeper.bat'
-$icoPath = Join-Path $scriptDir 'app-icon.ico'
+$icoPath = Join-Path $scriptDir 'icon.ico'
 
 [ShortcutHelper]::Create(
     $lnkPath,

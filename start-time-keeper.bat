@@ -2,19 +2,8 @@
 title Time Keeper
 cd /d "%~dp0"
 
-REM Build if needed
-if not exist ".next\BUILD_ID" (
-    echo Building Time Keeper...
-    call npm run build
-    if %errorlevel% neq 0 (
-        echo Build failed.
-        pause
-        exit /b 1
-    )
-)
-
-REM Start the production server in the background
-start /b cmd /c "npm run start"
+REM Start the dev server in the background
+start /b cmd /c "npm run dev"
 
 REM Wait for the server to be ready
 echo Waiting for server to start...
