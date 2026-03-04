@@ -14,7 +14,7 @@ if (!g.__timerState) {
     anchorHour: 0,
     anchorMinute: 0,
     intervalMs: 30 * 60 * 1000,
-    chimeType: "westminster",
+    chimeType: "aurora",
   };
 }
 

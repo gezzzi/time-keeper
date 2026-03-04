@@ -22,7 +22,7 @@ export function TimeKeeper() {
   const [anchorHour, setAnchorHour] = useState(0);
   const [anchorMinute, setAnchorMinute] = useState(0);
   const [intervalMinutes, setIntervalMinutes] = useState(30);
-  const [chimeType, setChimeType] = useState<ChimeType>("westminster");
+  const [chimeType, setChimeType] = useState<ChimeType>("aurora");
   const shouldResumeRef = useRef(false);
 
   const { playChime } = useChime(chimeType);
