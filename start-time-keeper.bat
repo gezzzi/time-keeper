@@ -26,7 +26,11 @@ REM Open in default browser via URL handler (ensures foreground activation)
 start "" http://localhost:4005
 
 echo.
-echo Time Keeper is running.
+echo Time Keeper is running on http://localhost:4005
 echo Press any key to stop the server and exit.
 pause >nul
-taskkill /f /im node.exe >nul 2>&1
+
+REM Kill only the processes listening on our port (not all node.exe)
+for /f "tokens=5" %%p in ('netstat -aon ^| findstr ":4005" ^| findstr "LISTENING"') do (
+    taskkill /f /pid %%p >nul 2>&1
+)
