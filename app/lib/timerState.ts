@@ -10,7 +10,7 @@ const g = globalThis as unknown as { __timerState?: TimerState };
 
 if (!g.__timerState) {
   g.__timerState = {
-    isRunning: false,
+    isRunning: true,
     anchorHour: 0,
     anchorMinute: 0,
     intervalMs: 30 * 60 * 1000,
